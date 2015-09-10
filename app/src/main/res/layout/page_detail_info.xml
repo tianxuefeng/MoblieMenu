@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eee"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:padding="1dip"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/detailItemGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dip"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+            <!-- 相关信息 -->
+            <RelativeLayout
+                android:id="@+id/detailContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/bg_fb"
+                android:padding="5dip">
+                <!-- 价格 -->
+                <TextView
+                    android:id="@+id/detailPriceLab"
+                    style="@style/txtAddressStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/lab_price"
+                    android:textColor="@color/font_666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detailPriceTxt"
+                    style="@style/txtAddressStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/detailPriceLab"
+                    android:layout_toRightOf="@+id/detailPriceLab"
+                    android:text="2300"
+                    android:textColor="@color/font_333"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <!-- 发布时间 -->
+                <TextView
+                    android:id="@+id/detailSendTimeTxt"
+                    style="@style/txtAddressStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="2014-07-18"
+                    android:textColor="@color/font_333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lab_detail_info_time"
+                    style="@style/txtAddressStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/detailSendTimeTxt"
+                    android:text="@string/lab_time"
+                    android:textColor="@color/font_666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <!-- 简介 -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/color_eee"
+                android:padding="10dip"
+                android:text="@string/lab_send_desc"
+                android:textColor="@color/font_333"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/div_line_black" />
+
+            <TextView
+                android:id="@+id/detailDetailTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/bg_fb"
+                android:minHeight="100dip"
+                android:padding="10dip"
+                android:text="@string/lab_detail"
+                android:textColor="@color/font_333"
+                android:textSize="18sp" />
+            <!-- 联系方式 -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/color_eee"
+                android:padding="10dip"
+                android:text="@string/lab_phone"
+                android:textColor="@color/font_333"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/div_line_black" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/bg_fb"
+                android:padding="5dip">
+                <!-- 联系人 -->
+                <TextView
+                    android:id="@+id/lab_detail_username"
+                    style="@style/txtAddressStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/lab_username"
+                    android:textColor="@color/font_666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_detail_username"
+                    style="@style/txtAddressStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/lab_detail_username"
+                    android:layout_toRightOf="@+id/lab_detail_username"
+                    android:text="测试"
+                    android:textColor="@color/font_333"
+                    android:textSize="15sp" />
+                <!-- 联系方式 -->
+                <TextView
+                    android:id="@+id/detailPhoneTxt"
+                    style="@style/txtAddressStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="13345689123"
+                    android:textColor="@color/font_333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detailPhoneLab"
+                    style="@style/txtAddressStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/detailPhoneTxt"
+                    android:text="@string/lab_detail_phone"
+                    android:textColor="@color/font_666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <!-- QQ -->
+            <TextView
+                android:id="@+id/detailQQLab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/color_eee"
+                android:padding="10dip"
+                android:text="@string/lab_qq"
+                android:textColor="@color/font_333"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/div_line_black" />
+
+            <TextView
+                android:id="@+id/detailQQTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/bg_fb"
+                android:minHeight="40dip"
+                android:padding="10dip"
+                android:text="@string/lab_qq"
+                android:textColor="@color/font_333"
+                android:textSize="18sp" />
+            <!-- 地址 -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/color_eee"
+                android:padding="10dip"
+                android:text="@string/lab_address"
+                android:textColor="@color/font_333"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/div_line_black" />
+
+            <TextView
+                android:id="@+id/detailAddressTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/bg_fb"
+                android:minHeight="40dip"
+                android:padding="10dip"
+                android:text="@string/lab_qq"
+                android:textColor="@color/font_333"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_detail_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip">
+                <!-- 屏蔽该用户 -->
+                <Button
+                    android:id="@+id/btn_detail_restrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/btn_red_selector"
+                    android:minWidth="100dip"
+                    android:padding="10dip"
+                    android:text="@string/btn_user_restrict"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+                <!-- 删除这条信息 -->
+                <Button
+                    android:id="@+id/btn_detail_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/btn_red_selector"
+                    android:minWidth="100dip"
+                    android:padding="10dip"
+                    android:text="@string/btn_delete_info"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

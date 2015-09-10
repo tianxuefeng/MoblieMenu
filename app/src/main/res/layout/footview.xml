@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footviewLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/labLoadMore"
+        android:layout_width="fill_parent"
+        android:layout_height="32dip"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/msg_LoadMore" />
+
+    <LinearLayout
+        android:id="@+id/recomBottomPreLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/loading_progressbar"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:indeterminateDrawable="@anim/progressbar" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:paddingRight="0dip"
+            android:text="@string/msg_Load"
+            android:textColor="@color/font_666" />
+    </LinearLayout>
+</LinearLayout>

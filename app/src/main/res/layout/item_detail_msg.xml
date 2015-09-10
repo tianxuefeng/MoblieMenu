@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 日期 -->
+    <TextView
+        android:id="@+id/lab_item_msg_time"
+        style="@style/txtAddressStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="2014-07-11"
+        android:textColor="@color/color_999"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lab_item_msg_name"
+        style="@style/txtAddressStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/lab_item_msg_time"
+        android:gravity="left"
+        android:text="评论人"
+        android:textColor="@color/color_999"
+        android:textSize="18sp" />
+    <!-- msg -->
+    <TextView
+        android:id="@+id/lab_item_msg_info"
+        style="@style/txtAddressStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lab_item_msg_name"
+        android:gravity="left"
+        android:text="评论内容"
+        android:textColor="@color/font_333"
+        android:textSize="18sp" />
+</RelativeLayout>

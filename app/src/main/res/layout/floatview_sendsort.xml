@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/floatview_bg_frame"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <GridView
+        android:id="@+id/float_sortGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dip"
+        android:numColumns="3"
+        android:padding="5dip"
+        android:verticalSpacing="10dip" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/div_line"
+        android:visibility="gone" />
+    <!-- 重新选择地区 -->
+
+    <Button
+        android:id="@+id/btn_category_back_locat"
+        style="@style/txtAddressStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/btn_red_selector"
+        android:focusable="false"
+        android:padding="10dip"
+        android:text="@string/btn_back_locat"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

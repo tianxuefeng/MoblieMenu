@@ -154,7 +154,7 @@ public class MainActivity extends Activity
         Bundle b = Cate.toBundle();
 
         if (isTwoPane) {
-            FlowerDetailFragment fragment = new FlowerDetailFragment();
+            CategoryDetailFragment fragment = new CategoryDetailFragment();
             fragment.setArguments(b);
             getFragmentManager().beginTransaction()
                     .replace(R.id.detailContainer, fragment)

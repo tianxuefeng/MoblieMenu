@@ -3,28 +3,11 @@ package com.aptsys.android.data.Constant;
 public class ConstantURL {
 
     /**
-     * 测试服务器联通情况
-     */
-    public static final String TestURL = "http://www.stefancity123.com/";
-
-    /**
      * 服务器路径
      */
-    public static final String URL_SERVER = /*"http://stefancity.com/"*/"http://www.stefancity123.com/";
+    public static final String URL_SERVER = "http://gemscms.aptsys.com.sg/";
     // /srvs/categorysrv.asmx/getCategoryList?LanguageCode=en&ParentID=0
-    /**
-     * 类别数据获取URL
-     **/
-    public static final String URL_MAIN_CATEGORY = "CategorySrv.asmx";
 
-    /**
-     * 列表数据获取URL
-     **/
-    public static final String URL_LIST_INFO = "http://xuefengjushi.g6.namepu.com/Srvs/ItemSrv.asmx/getItemListWithPage";
-    /**
-     * 添加列表数据的URL
-     **/
-    public static final String URL_ITEMS_INSERT = "http://xuefengjushi.g6.namepu.com/Srvs/ItemSrv.asmx/InsertItem";
     /**
      * ftp服务器路径
      **/

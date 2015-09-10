@@ -18,7 +18,7 @@ public class FlowerDetailActivity extends Activity {
 
         if (savedInstanceState == null) {
 //          Create the fragment, set its args, add it to the detail container
-            FlowerDetailFragment fragment = new FlowerDetailFragment();
+            CategoryDetailFragment fragment = new CategoryDetailFragment();
 
             Bundle b = getIntent().getBundleExtra(MainActivity.CATEGORY_BUNDLE);
             fragment.setArguments(b);

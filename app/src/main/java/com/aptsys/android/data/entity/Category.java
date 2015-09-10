@@ -225,6 +225,16 @@ public class Category implements Serializable {
         }
     }
 
+    //	Create from a bundle
+    public Category(Bundle b) {
+        if (b != null) {
+//            this.flowerName = b.getString(FLOWER_NAME);
+//            this.imageResource = b.getInt(IMAGE_RESOURCE);
+//            this.price = b.getDouble(PRICE);
+//            this.instructions = b.getString(INSTRUCTIONS);
+        }
+    }
+
     public Integer getID() {
         return iD;
     }
@@ -511,4 +521,5 @@ public class Category implements Serializable {
         b.putString(photo, this.photo);
         return b;
     }
+
 }

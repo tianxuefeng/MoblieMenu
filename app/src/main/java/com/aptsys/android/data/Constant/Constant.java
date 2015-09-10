@@ -11,63 +11,15 @@ import java.util.regex.Pattern;
 
 public class Constant {
 
+    public static final String RestaurantID = "28";
+    public static final String SapphireID = "13";
+    public static final String ProductId = "1";
+
     /**
      * 配置文件路径
      **/
     public static final String SETTINGSP = "com.aptsys.android.city_preferences";
 
-//	// 当前登陆的用户
-//	public static UserEntity curUser;
-//	/** 当前用户的定位信息 **/
-//	public static LocationEntity curLocationEntity;
-//	/** 当前用户所在城市的地区列表 **/
-//	public static List<RegionManEntity> regionManEntities;
-//	/** 当前选中的地区 **/
-//	public static RegionManEntity curRegionEntity;
-//	/** 当前选中的街道 **/
-//	public static RegionManEntity curStreetRegion;
-//	/** 当前用户所在城市的地区的街道列表 **/
-//	public static List<RegionManEntity> regionStreetEntities;
-    /**
-     * 配置信息【是否弹出管理员窗口】
-     **/
-    public static final String PREF_SHOW_DIALOG = "init_showDialog";
-    /**
-     * 配置信息【保存的程序版本号】
-     **/
-    public static final String PREF_VERSION = "init_version";
-    /**
-     * 配置信息【语言】
-     **/
-    public static final String PREF_LANGUAGE = "city_language";
-    /**
-     * 配置信息-定位信息【国家】
-     **/
-    public static final String PREF_COUNTRY = "gps_country";
-    /**
-     * 配置信息-定位信息【城市】
-     **/
-    public static final String PREF_CITY = "gps_city";
-    /**
-     * 配置信息-定位信息【地区】
-     **/
-    public static final String PREF_LOCALITY = "gps_locality";
-    /**
-     * 配置信息-定位信息【街道】
-     **/
-    public static final String PREF_STREET = "gps_street";
-    /**
-     * 配置信息-定位信息【详细信息】
-     **/
-    public static final String PREF_DETAIL = "gps_detail";
-    /**
-     * 配置信息-定位信息【经度】
-     **/
-    public static final String PREF_LONGITUDE = "gps_longitude";
-    /**
-     * 配置信息-定位信息【纬度】
-     **/
-    public static final String PREF_LATITUDE = "gps_latitude";
     /**
      * 设置照片的最大像素为200W像素，照片过大容易出现内存溢出
      **/
@@ -76,18 +28,7 @@ public class Constant {
      * 当前屏幕大小
      **/
     public static final int[] ScreenSize = new int[2];
-    /**
-     * 主界面
-     */
-    public static final int VIEW_MAIN = 0;
-    /**
-     * 积分
-     */
-    public static final int VIEW_SCORE = 1;
-    /**
-     * 个人中心
-     */
-    public static final int VIEW_USER = 2;
+
     /**
      * 抓取网页信息时，设置头标识
      */

@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.aptsys.android.R;
+import com.aptsys.android.data.Constant.Constant;
 import com.aptsys.android.data.entity.Category;
 import com.aptsys.android.data.service.CategoryService;
 
@@ -101,7 +102,7 @@ public class CategoryListFragment extends ListFragment {
         @Override
         protected Integer doInBackground(Void... params) {
             try {
-                List<Category> dataList = categoryService.getList("", "");
+                List<Category> dataList = categoryService.getList(Constant.SapphireID, Constant.ProductId);
                 categories = dataList;
                 return dataList != null ? dataList.size() : 0;
             } catch (Exception e) {

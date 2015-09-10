@@ -19,7 +19,7 @@ public class CategoryService extends BaseService {
     /**
      * 分类信息管理Server URL
      **/
-    public static final String CATEGORY_URL = ConstantURL.URL_SERVER + "Srvs/categorysrv.asmx/";
+    public static final String CATEGORY_URL = ConstantURL.URL_SERVER + "srvs/categorysrv/GetCategoriesBySapphireID";
 //	/** 新增分类 **/
 //	public static final String Method_Insert = "InsertCategory";
 //	/** 编辑分类 **/
@@ -32,17 +32,19 @@ public class CategoryService extends BaseService {
     public static final String Method_CategoryList = "getCategoryList";
 
     /**
-     * 指定父级分类来获得分类信息
+     * Get Category List
      *
-     * @param parentId
+     * @param sapphireID, productID
      * @return
      */
-    public List<Category> getList(String parentId, String language) {
+
+    public List<Category> getList(String sapphireID, String productID) {
         List<Category> list = null;
 
         List<NameValuePair> postData = new ArrayList<NameValuePair>();
-        postData.add(new BasicNameValuePair("", parentId));
-        String dataStr = postData(CATEGORY_URL + Method_CategoryList, postData, "utf-8");
+        postData.add(new BasicNameValuePair("SapphireID", sapphireID));
+        postData.add(new BasicNameValuePair("Product", productID));
+        String dataStr = postData(CATEGORY_URL, postData, "utf-8");
         if (dataStr != null && !dataStr.equals("")) {
             JSONArray jsonArray;
             try {
